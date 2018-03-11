@@ -1,5 +1,5 @@
 # TimeOnYou!
-A terminal task timer
+A terminal task timer that notifies you
 
 ## Getting Started
 

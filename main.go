@@ -131,7 +131,6 @@ func notifyThird(task timedTask) {
 }
 
 func showNotification(message string) {
-	beeep.DefaultDuration = 10
 	err := beeep.Notify("TimeOnYou!", message, "dialog-information")
 	if err != nil {
 		panic(err)
