@@ -68,7 +68,7 @@ func getTasks() {
 func printHelp() {
 	fmt.Println("Usage: hit 'b' to go back")
 	fmt.Println("Example: 'MyTask 1:h' or 'MyTask 60:m'")
-	fmt.Println("I'll run the tasks by 2/4 for a MVP, 1/4 for tests, 1/4 for fine tune/refactor")
+	fmt.Println("I'll run the tasks by 2/4 for the development, 1/4 for tests, 1/4 for refactor and deploy")
 }
 
 func parseTime(time string) int {
@@ -117,17 +117,17 @@ func showProgBar(title string, count int, part int) {
 
 func notifyFirst(task timedTask) {
 	showNotification(
-		`First part of the time has passed. Do you have a MVP?`)
+		`First part of the time has passed.`)
 }
 
 func notifySecond(task timedTask) {
 	showNotification(
-		`Second part of the time has passed. It's tested?`)
+		`Second part of the time has passed.`)
 }
 
 func notifyThird(task timedTask) {
 	showNotification(
-		`Last part of the time has passed. It's done?`)
+		`Last part of the time has passed.`)
 }
 
 func showNotification(message string) {
